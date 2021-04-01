@@ -1,3 +1,11 @@
 "use strict";
 
-alert('script is imported and executed');
+
+function test1() {
+    console.log("script is imported and executed");
+}
+
+export test1
+
+
+
