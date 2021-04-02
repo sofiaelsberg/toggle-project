@@ -1,8 +1,7 @@
 "use strict";
 
-
 // Import JS partials to main
-import { test1 } from `./partials/navigation.js`;
+import { test1 } from './partials/navigation.js';
 
 
 // Js waits to run until after DOM is loaded
