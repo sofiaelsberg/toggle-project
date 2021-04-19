@@ -71,8 +71,8 @@ button {
 @media (max-width: 850px) {
   .burger {
     position: relative;
-    display: block;
-    color: black;
+    display: block!;
+    color:white;
     z-index: 11;
     font-size: 3rem;
   }
@@ -88,6 +88,7 @@ button {
   }
 
   .nav-links {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -100,5 +101,13 @@ button {
     justify-content: space-evenly;
     align-items: center;
     z-index: 10;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  #burger.open-color{
+    color: black;
   }
 }

@@ -1,7 +1,8 @@
 "use strict";
 
-// Import JS partials to main
-import { test1 } from './partials/navigation';
+
+// Import JS partials
+import { toggleMenu } from './partials/navigation.js';
 
 
 // Js waits to run until after DOM is loaded
@@ -9,6 +10,6 @@ document.addEventListener("DOMContentLoaded", ready);
 
 
 function ready() {
-    alert('DOM is ready');
-    test1();
+    console.log('DOM is ready');
+    toggleMenu();
 }
