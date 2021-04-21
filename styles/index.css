@@ -63,16 +63,16 @@ button {
   font-weight: 500;
 }
 
-.burger {
-  display: none;
+.fa-bars, .fa-times {
+  display: none!important;
   cursor: pointer;
+  color: white;
 }
 
 @media (max-width: 850px) {
   .burger {
     position: relative;
-    display: block!;
-    color:white;
+    display: block!important;
     z-index: 11;
     font-size: 3rem;
   }
@@ -96,18 +96,33 @@ button {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 100px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     z-index: 10;
   }
 
+  .nav-links.active {
+    display: flex;
+  }
+
+
   .nav-links.show {
     display: flex;
   }
 
-  #burger.open-color{
+  #burger.burger-open{
     color: black;
+  }
+
+  .hide-burger {
+  display: none!important;
+  }
+
+  .show-x {
+    display: block!important;
+    color: black;
+    z-index: 11;
   }
 }
